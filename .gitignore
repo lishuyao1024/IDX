@@ -1,0 +1,17 @@
+# Raw and processed data files
+*.csv
+*.xlsx
+*.xls
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.venv/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
