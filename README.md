@@ -37,3 +37,12 @@ Note: Raw CSV files and source data are confidential and are not uploaded to thi
 - Competitive analysis Tableau dashboard
 - 1-page market intelligence report
 - 5-minute final presentation
+
+## Weekly Progress
+
+### Week 1 - Monthly Dataset Aggregation
+- Downloaded monthly MLS Listing and Sold CSV files from the IDX Exchange FTP server.
+- Aggregated 29 months of data from January 2024 through May 2026.
+- Combined monthly files into two Residential-only master datasets: Listings and Sold.
+- Generated a row count validation summary to confirm records before and after the Residential filter.
+- Raw and processed CSV files are not uploaded because the MLS data is confidential.
