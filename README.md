@@ -46,3 +46,17 @@ Note: Raw CSV files and source data are confidential and are not uploaded to thi
 - Combined monthly files into two Residential-only master datasets: Listings and Sold.
 - Generated a row count validation summary to confirm records before and after the Residential filter.
 - Raw and processed CSV files are not uploaded because the MLS data is confidential.
+  
+### Weeks 2–3 - Dataset Structuring and Validation
+- Reviewed the structure of the Residential Sold and Listing datasets.
+- Confirmed 430,427 Sold records and 591,977 Listing records.
+- Generated column data-type and missing-value summaries.
+- Flagged 15 Sold columns and 13 Listing columns with more than 90% missing values.
+- Analyzed numeric distributions for price, living area, lot size, bedrooms,
+  bathrooms, days on market, and year built.
+- Generated histograms and boxplots using percentile and IQR methods.
+- Completed foundational EDA covering residential share, median and average
+  prices, days on market, sold-to-list comparison, date consistency, and
+  county median prices.
+- Mortgage-rate enrichment was intentionally excluded.
+- Confidential MLS source and processed datasets are not uploaded.
