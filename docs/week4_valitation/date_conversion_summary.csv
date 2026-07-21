@@ -1,0 +1,9 @@
+dataset,column,column_present,non_null_before,valid_datetime_after,parse_failures,prepared_dtype
+sold,CloseDate,True,447990,447990,0,datetime64[us]
+sold,PurchaseContractDate,True,447793,447793,0,datetime64[us]
+sold,ListingContractDate,True,447989,447989,0,datetime64[us]
+sold,ContractStatusChangeDate,True,447396,447396,0,datetime64[us]
+listing,CloseDate,True,168401,168401,0,datetime64[us]
+listing,PurchaseContractDate,True,287164,287164,0,datetime64[us]
+listing,ListingContractDate,True,616099,616099,0,datetime64[us]
+listing,ContractStatusChangeDate,True,608822,608822,0,datetime64[us]

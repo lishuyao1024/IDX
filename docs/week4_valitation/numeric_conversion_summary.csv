@@ -1,0 +1,25 @@
+dataset,column,column_present,non_null_before,valid_numeric_after,conversion_failures,prepared_dtype
+sold,ClosePrice,True,447988,447988,0,float64
+sold,ListPrice,True,447990,447990,0,float64
+sold,OriginalListPrice,True,447169,447169,0,float64
+sold,LivingArea,True,447737,447737,0,float64
+sold,LotSizeAcres,True,413249,413249,0,float64
+sold,DaysOnMarket,True,447990,447990,0,int64
+sold,BedroomsTotal,True,447978,447978,0,float64
+sold,BathroomsTotalInteger,True,447920,447920,0,float64
+sold,YearBuilt,True,447590,447590,0,float64
+sold,Latitude,True,443614,443614,0,float64
+sold,Longitude,True,443614,443614,0,float64
+sold,rate_30yr_fixed,True,447990,447990,0,float64
+listing,ClosePrice,True,144273,144273,0,float64
+listing,ListPrice,True,616099,616099,0,float64
+listing,OriginalListPrice,True,615224,615224,0,float64
+listing,LivingArea,True,615478,615478,0,float64
+listing,LotSizeAcres,True,565707,565707,0,float64
+listing,DaysOnMarket,True,616099,616099,0,int64
+listing,BedroomsTotal,True,615935,615935,0,float64
+listing,BathroomsTotalInteger,True,616042,616042,0,float64 | int64
+listing,YearBuilt,True,615036,615036,0,float64
+listing,Latitude,True,535090,535090,0,float64
+listing,Longitude,True,535090,535090,0,float64
+listing,rate_30yr_fixed,True,616099,616099,0,float64
