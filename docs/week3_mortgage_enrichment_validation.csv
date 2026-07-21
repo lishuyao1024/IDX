@@ -1,3 +1,0 @@
-﻿dataset,date_key,input_rows,output_rows,row_count_unchanged,invalid_or_missing_date_rows,null_rate_rows_after_merge,validation_passed,dataset_first_month,dataset_last_month,fred_first_month,fred_last_month,output_file
-Sold,CloseDate,447990,447990,True,0,0,True,2024-01,2026-06,1971-04,2026-07,CRMLSSold_Residential_202401_202606_Mortgage_Enriched.csv
-Listings,ListingContractDate,616099,616099,True,0,0,True,2024-01,2026-06,1971-04,2026-07,CRMLSListing_Residential_202401_202606_Mortgage_Enriched.csv
