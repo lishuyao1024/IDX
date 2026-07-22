@@ -67,3 +67,25 @@ Note: Raw CSV files and source data are confidential and are not uploaded to thi
 - Left-merged monthly mortgage rates onto both Residential datasets.
 - Validated that row counts remained unchanged and that no mortgage-rate values were missing after the merge.
 
+### Week 4 Data Validation & Quality Assessment
+
+Completed comprehensive validation on both the Listings and Sold datasets after mortgage rate enrichment.
+
+Validation tasks included:
+
+- Verified dataset structure (rows, columns, file size, and schema consistency)
+- Checked numeric field conversions and identified invalid values
+- Evaluated missing values across important variables
+- Performed date consistency validation, including:
+  - Listing Date vs. Close Date
+  - Purchase Contract Date vs. Close Date
+  - Listing Date vs. Purchase Contract Date
+- Generated validation summary reports for both datasets
+
+Validation reports are stored in:
+
+```
+docs/validation/week4_5/
+```
+
+The validated datasets will serve as the foundation for subsequent feature engineering, market analysis, and Tableau dashboard development.
