@@ -92,29 +92,21 @@ The validated datasets will serve as the foundation for subsequent feature engin
 
 # Week 5 – Data Cleaning & Validation
 
-## Objective
+Completed systematic data cleaning on both the Listings and Sold datasets following the Week 4 validation process.
 
-Perform systematic data cleaning and validate dataset quality before downstream analysis and dashboard development.
+Cleaning tasks included:
 
-## Tasks Completed
+- Reviewed required and optional columns for completeness.
+- Evaluated missing values across important variables.
+- Applied data quality rules to identify invalid or inconsistent records.
+- Flagged records that did not meet predefined quality criteria.
+- Categorized removal reasons for excluded records.
+- Generated cleaning validation reports for both datasets.
 
-- Reviewed dataset columns and checked data completeness.
-- Identified missing values across key fields.
-- Applied data quality rules to detect invalid or inconsistent records.
-- Flagged records requiring removal based on predefined cleaning criteria.
-- Generated validation summaries documenting each cleaning step.
-- Produced a cleaned dataset ready for subsequent analysis.
+Cleaning reports are stored in:
 
-## Validation Outputs
+```
+docs/validation/week5/
+```
 
-The following validation summaries were generated:
-
-- Cleaning validation summary
-- Column review summary
-- Missing value summary
-- Quality flag summary
-- Removal reason summary
-
-## Key Outcome
-
-The Week 5 pipeline establishes a standardized data cleaning workflow that improves dataset consistency, documents all cleaning decisions, and prepares reliable data for feature engineering, exploratory analysis, and Tableau dashboard development.
+The cleaned datasets provide a standardized, analysis-ready foundation for subsequent feature engineering, exploratory analysis, and Tableau dashboard development.
