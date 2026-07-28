@@ -90,7 +90,7 @@ docs/validation/week4/
 
 The validated datasets will serve as the foundation for subsequent feature engineering, market analysis, and Tableau dashboard development.
 
-## Week 5 - Data Cleaning & Quality Flags
+### Week 5 - Data Cleaning & Quality Flags
 
 Completed rule-based cleaning on both the Listings and Sold datasets using the validated Week 4 outputs.
 
