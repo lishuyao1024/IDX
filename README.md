@@ -85,28 +85,40 @@ Validation tasks included:
 Validation reports are stored in:
 
 ```
-docs/validation/week4_5/
+docs/validation/week4/
 ```
 
 The validated datasets will serve as the foundation for subsequent feature engineering, market analysis, and Tableau dashboard development.
 
-# Week 5 – Data Cleaning & Validation
+## Week 5 - Data Cleaning & Quality Flags
 
-Completed systematic data cleaning on both the Listings and Sold datasets following the Week 4 validation process.
+Completed rule-based cleaning on both the Listings and Sold datasets using the validated Week 4 outputs.
 
 Cleaning tasks included:
 
-- Reviewed required and optional columns for completeness.
-- Evaluated missing values across important variables.
-- Applied data quality rules to identify invalid or inconsistent records.
-- Flagged records that did not meet predefined quality criteria.
-- Categorized removal reasons for excluded records.
-- Generated cleaning validation reports for both datasets.
+- Created invalid numeric-value flags for:
+  - `ClosePrice <= 0`
+  - `LivingArea <= 0`
+  - `DaysOnMarket < 0`
+  - Negative bedroom or bathroom values
+- Created date-consistency flags for invalid transaction timelines
+- Created geographic-quality flags for missing, zero, positive, out-of-state, or implausible coordinates
+- Removed non-core columns with more than 90% missing values
+- Removed the redundant `ListingKeyNumeric` field
+- Removed records with clearly invalid numeric values or missing required fields
+- Retained date and geographic issues with flags for further review
+- Independently validated all cleaned outputs and quality flags
 
-Cleaning reports are stored in:
+Cleaning results:
 
-```
+- Sold dataset: 447,990 → 447,771 rows
+- Listing dataset: 616,099 → 615,677 rows
+- Total records removed: 641
+- Sold columns removed: 16
+- Listing columns removed: 14
+- Validation flag mismatches: 0
+
+Week 5 validation reports are stored in:
+
+```text
 docs/validation/week5/
-```
-
-The cleaned datasets provide a standardized, analysis-ready foundation for subsequent feature engineering, exploratory analysis, and Tableau dashboard development.
