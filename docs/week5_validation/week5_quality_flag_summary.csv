@@ -1,0 +1,37 @@
+﻿dataset,category,flag,rule,true_count_before_filtering,true_pct_before_filtering,action
+sold,numeric,invalid_close_price_flag,ClosePrice <= 0,1,0.000223,remove
+sold,numeric,invalid_living_area_flag,LivingArea <= 0,165,0.036831,remove
+sold,numeric,negative_days_on_market_flag,DaysOnMarket < 0,51,0.011384,remove
+sold,numeric,negative_bedrooms_flag,BedroomsTotal < 0,0,0.0,remove
+sold,numeric,negative_bathrooms_flag,BathroomsTotalInteger < 0,0,0.0,remove
+sold,numeric,invalid_numeric_flag,Any explicit invalid-numeric rule is true,217,0.048439,remove
+sold,completeness,missing_required_field_flag,A dataset-specific required field is missing,2,0.000446,remove
+sold,removal,remove_from_cleaned_flag,Invalid numeric value or missing required field,219,0.048885,remove
+sold,date,listing_after_close_flag,ListingContractDate > CloseDate,67,0.014956,retain_and_flag
+sold,date,purchase_after_close_flag,PurchaseContractDate > CloseDate,239,0.053349,retain_and_flag
+sold,date,negative_timeline_flag,Any transaction date is earlier than its logical predecessor,529,0.118083,retain_and_flag
+sold,geographic,missing_coordinates_flag,Latitude or Longitude is missing,4376,0.976808,retain_and_flag
+sold,geographic,zero_coordinates_flag,Latitude = 0 or Longitude = 0,37,0.008259,retain_and_flag
+sold,geographic,positive_longitude_flag,Longitude > 0,31,0.00692,retain_and_flag
+sold,geographic,out_of_state_flag,StateOrProvince is populated but is not CA/California,29,0.006473,retain_and_flag
+sold,geographic,implausible_coordinates_flag,"Latitude is outside [-90, 90] or Longitude outside [-180, 180]",2,0.000446,retain_and_flag
+sold,geographic,outside_california_bounds_flag,A CA record falls outside approximate CA coordinate bounds,85,0.018974,retain_and_flag
+sold,geographic,geographic_review_flag,Any geographic quality flag is true,4490,1.002255,retain_and_flag
+listing,numeric,invalid_close_price_flag,ClosePrice <= 0,0,0.0,remove
+listing,numeric,invalid_living_area_flag,LivingArea <= 0,394,0.063951,remove
+listing,numeric,negative_days_on_market_flag,DaysOnMarket < 0,28,0.004545,remove
+listing,numeric,negative_bedrooms_flag,BedroomsTotal < 0,0,0.0,remove
+listing,numeric,negative_bathrooms_flag,BathroomsTotalInteger < 0,0,0.0,remove
+listing,numeric,invalid_numeric_flag,Any explicit invalid-numeric rule is true,422,0.068495,remove
+listing,completeness,missing_required_field_flag,A dataset-specific required field is missing,0,0.0,remove
+listing,removal,remove_from_cleaned_flag,Invalid numeric value or missing required field,422,0.068495,remove
+listing,date,listing_after_close_flag,ListingContractDate > CloseDate,84,0.013634,retain_and_flag
+listing,date,purchase_after_close_flag,PurchaseContractDate > CloseDate,268,0.0435,retain_and_flag
+listing,date,negative_timeline_flag,Any transaction date is earlier than its logical predecessor,568,0.092193,retain_and_flag
+listing,geographic,missing_coordinates_flag,Latitude or Longitude is missing,81009,13.148699,retain_and_flag
+listing,geographic,zero_coordinates_flag,Latitude = 0 or Longitude = 0,75,0.012173,retain_and_flag
+listing,geographic,positive_longitude_flag,Longitude > 0,85,0.013796,retain_and_flag
+listing,geographic,out_of_state_flag,StateOrProvince is populated but is not CA/California,162,0.026294,retain_and_flag
+listing,geographic,implausible_coordinates_flag,"Latitude is outside [-90, 90] or Longitude outside [-180, 180]",4,0.000649,retain_and_flag
+listing,geographic,outside_california_bounds_flag,A CA record falls outside approximate CA coordinate bounds,170,0.027593,retain_and_flag
+listing,geographic,geographic_review_flag,Any geographic quality flag is true,81350,13.204047,retain_and_flag
