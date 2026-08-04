@@ -19,7 +19,6 @@ week6_feature_engineering.py
         |
         +-- Complete engineered dataset (local only)
         +-- 25-row engineered sample
-        +-- Validation summary
         |
         v
 week6_segment_analysis.py
