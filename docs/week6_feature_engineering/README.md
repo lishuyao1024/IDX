@@ -98,18 +98,6 @@ The Office Top 100 tables are ranked by total sales volume. Missing, placeholder
 
 `CRMLSSold_Residential_202401_202606_Week6_Engineered.csv` is approximately 337 MB and is intentionally excluded by the repository `.gitignore`. It should remain local and should not be uploaded directly to GitHub.
 
-## Run the Analysis
-
-From the project root, run:
-
-```powershell
-python outputs/week6_feature_engineering/week6_feature_engineering.py
-python outputs/week6_feature_engineering/validate_week6_feature_engineering.py
-python outputs/week6_feature_engineering/week6_segment_analysis.py
-```
-
-The feature-engineering script must run before the segment-analysis script because the segment analysis depends on the engineered fields.
-
 ## Data Handling and QA
 
 - Feature engineering preserves all 447,771 cleaned source rows.
