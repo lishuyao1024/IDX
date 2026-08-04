@@ -80,7 +80,6 @@ The Office Top 100 tables are ranked by total sales volume. Missing, placeholder
 |---|---|
 | `week6_feature_engineering.py` | Creates all Week 6 engineered metrics and sample output |
 | `week6_segment_analysis.py` | Generates the four selected segment summaries and Office Top 100 tables |
-| `validate_week6_feature_engineering.py` | Independently recomputes and verifies the engineered metrics |
 
 ### Small output files
 
