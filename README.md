@@ -123,7 +123,7 @@ Week 5 validation reports are stored in:
 ```text
 docs/validation/week5/
 
-
+```
 
 ### Week 6 - Feature Engineering & Market Metrics
 
