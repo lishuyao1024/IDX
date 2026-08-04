@@ -122,3 +122,33 @@ Week 5 validation reports are stored in:
 
 ```text
 docs/validation/week5/
+
+## Week 6 - Feature Engineering & Market Metrics
+
+Completed feature engineering and segmented market analysis using the cleaned Week 5 Residential Sold dataset.
+
+Feature-engineering tasks included:
+
+- Created the following market metrics:
+  - `price_ratio = ClosePrice / ListPrice`
+  - `close_to_original_list_ratio = ClosePrice / OriginalListPrice`
+  - `price_per_sqft = ClosePrice / LivingArea`
+  - `days_on_market`
+- Created time-series variables from `CloseDate`:
+  - `year`
+  - `month`
+  - `YrMo`
+- Created transaction timeline variables:
+  - `listing_to_contract_days`
+  - `contract_to_close_days`
+- Prevented invalid divisions from producing infinite values
+- Flagged negative transaction durations without deleting the underlying records
+- Created a 25-row sample showing the original and engineered fields
+- Generated segmented summaries for:
+  - `PropertySubType`
+  - `CountyOrParish`
+  - `ListOfficeName`
+  - `BuyerOfficeName`
+- Generated Top 100 Listing Office and Buyer Office rankings by sales volume
+
+
