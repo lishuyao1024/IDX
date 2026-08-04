@@ -98,6 +98,22 @@ The Office Top 100 tables are ranked by total sales volume. Missing, placeholder
 
 `CRMLSSold_Residential_202401_202606_Week6_Engineered.csv` is approximately 337 MB and is intentionally excluded by the repository `.gitignore`. It should remain local and should not be uploaded directly to GitHub.
 
+### Overall Output
+
+| Measure | Result |
+|---|---:|
+| Analysis period | January 2024 - June 2026 |
+| Cleaned sold records processed | 447,771 |
+| Unique transactions used in segment analysis | 447,395 |
+| Repeated transaction snapshots excluded | 376 |
+| Estimated total sales volume | $533.39 billion |
+| Engineered variables created | 9 |
+| Property subtype groups | 21 |
+| County groups | 63 |
+| Listing office groups | 19,155 |
+| Buyer office groups | 21,868 |
+
+
 ## Data Handling and QA
 
 - Feature engineering preserves all 447,771 cleaned source rows.
@@ -118,56 +134,6 @@ The Office Top 100 tables are ranked by total sales volume. Missing, placeholder
 - Competitive intelligence using sales volume and transaction counts
 - Data-quality checks for missing values, invalid ratios, duplicate transactions, and inconsistent dates
 
-## Project Results
-
-This Week 6 analysis transformed the cleaned CRMLS residential sold data into analysis-ready market metrics and produced segmented summaries by property subtype, county, listing office, and buyer office.
-
-### Overall Output
-
-| Measure | Result |
-|---|---:|
-| Analysis period | January 2024 - June 2026 |
-| Cleaned sold records processed | 447,771 |
-| Unique transactions used in segment analysis | 447,395 |
-| Repeated transaction snapshots excluded | 376 |
-| Estimated total sales volume | $533.39 billion |
-| Engineered variables created | 9 |
-| Property subtype groups | 21 |
-| County groups | 63 |
-| Listing office groups | 19,155 |
-| Buyer office groups | 21,868 |
-
-The following variables were created:
-
-- `price_ratio`
-- `close_to_original_list_ratio`
-- `price_per_sqft`
-- `days_on_market`
-- `year`
-- `month`
-- `YrMo`
-- `listing_to_contract_days`
-- `contract_to_close_days`
-
 ---
 
-## 1. Engineered Data Sample
-
-File: [week6_engineered_sample.csv](./week6_engineered_sample.csv)
-
-This file contains 25 example transactions showing the original MLS fields next to the newly engineered variables.
-
-### Key details
-
-- Rows: 25
-- Columns: 20
-- All nine engineered variables are populated in every sample row.
-- The sample includes the original prices, living area, and transaction dates so that each calculated metric can be checked manually.
-- The sample records are from January 2024.
-- This file is intended to demonstrate correct feature construction and is not a representative market sample.
-
-### Example calculations
-
-```text
-price_ratio = ClosePrice / ListPrice
 
