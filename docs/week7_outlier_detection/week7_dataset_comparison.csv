@@ -1,0 +1,14 @@
+metric,before_filtering,after_filtering,absolute_change,percent_change
+row_count,447771.0,376529.0,-71242.0,-15.910365
+rows_removed,0.0,71242.0,71242.0,15.910365
+median_ClosePrice,825000.0,789000.0,-36000.0,-4.363636
+median_LivingArea,1646.0,1573.0,-73.0,-4.434994
+median_DaysOnMarket,18.0,16.0,-2.0,-11.111111
+rows_with_any_iqr_outlier,70300.0,0.0,-70300.0,
+rows_with_any_extreme_percentile,1924.0,0.0,-1924.0,
+rows_with_any_business_rule_invalid,0.0,0.0,0.0,
+rows_with_any_combined_outlier,70921.0,0.0,-70921.0,
+rows_in_duplicate_listing_key_groups,748.0,0.0,-748.0,
+superseded_duplicate_snapshots_excluded,376.0,0.0,-376.0,
+outlier_and_superseded_overlap,55.0,0.0,-55.0,
+rows_with_any_analysis_exclusion,71242.0,0.0,-71242.0,

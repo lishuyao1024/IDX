@@ -1,0 +1,4 @@
+field,source_rows,clean_rows,source_non_null,source_missing,clean_non_null,source_min,source_q1,source_median,source_q3,source_max,iqr,iqr_lower_bound,iqr_upper_bound,p001,p999,iqr_flagged_rows,extreme_percentile_flagged_rows,business_rule_invalid_rows,combined_field_flagged_rows,combined_field_flagged_pct,clean_median,median_change,median_change_pct
+ClosePrice,447771,376529,447771,0,376529,1.15,575000.0,825000.0,1300000.0,989500000.0,725000.0,-512500.0,2387500.0,69693.0,15500000.0,33479,886,0,33927,7.576864,789000.0,-36000.0,-4.363636
+LivingArea,447771,376529,447518,253,376417,1.0,1248.0,1646.0,2224.0,17021321.0,976.0,-216.0,3688.0,400.0,9494.381,19568,817,0,19937,4.452499,1573.0,-73.0,-4.434994
+DaysOnMarket,447771,376529,447771,0,376529,0.0,8.0,18.0,48.0,12430.0,40.0,-52.0,108.0,0.0,434.0,34146,445,0,34146,7.625773,16.0,-2.0,-11.111111
