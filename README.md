@@ -154,3 +154,42 @@ Feature-engineering tasks included:
 - Generated Top 100 Listing Office and Buyer Office rankings by sales volume
 
 
+### Week 7 - Outlier Detection & Data Quality
+
+Completed outlier detection and data-quality filtering using the engineered Week 6 Residential Sold dataset.
+
+Outlier-detection tasks included:
+
+- Applied the Interquartile Range (IQR) method to the required numeric fields:
+  - `ClosePrice`
+  - `LivingArea`
+  - `DaysOnMarket`
+- Calculated the following thresholds for each field:
+  - First quartile (`Q1`)
+  - Third quartile (`Q3`)
+  - Interquartile range (`IQR = Q3 - Q1`)
+  - Lower bound (`Q1 - 1.5 × IQR`)
+  - Upper bound (`Q3 + 1.5 × IQR`)
+- Added separate IQR outlier flags without deleting the underlying records
+- Added extreme-percentile flags using the 0.1st and 99.9th percentiles to identify extreme values that could be missed by strongly skewed IQR ranges
+- Applied basic business-validity rules:
+  - `ClosePrice > 0`
+  - `LivingArea > 0`
+  - `DaysOnMarket >= 0`
+- Created combined field-level and dataset-level outlier flags
+- Preserved all 447,771 source records in a complete flagged dataset
+- Identified repeated `ListingKey` snapshots and retained the newest loaded record for each transaction in the clean dataset
+- Created a separate clean filtered dataset containing 376,529 unique, non-outlier transactions
+- Excluded 71,242 records from the clean analysis dataset:
+  - 70,921 records with at least one numeric outlier flag
+  - 376 superseded duplicate snapshots
+  - 55 records included in both categories
+- Compared dataset size and median values before and after filtering:
+  - Median `ClosePrice`: `$825,000` → `$789,000`
+  - Median `LivingArea`: `1,646` → `1,573` square feet
+  - Median `DaysOnMarket`: `18` → `16` days
+- Generated a written before-and-after comparison of the filtering results
+- Independently validated all thresholds, flags, row counts, duplicate handling, and median calculations
+- Prepared the clean filtered dataset for the Week 8–10 Tableau dashboard development
+
+
