@@ -190,9 +190,8 @@ Outlier-detection tasks included:
   - Median `DaysOnMarket`: `18` → `16` days
 - Generated a written before-and-after comparison of the filtering results
 - Independently validated all thresholds, flags, row counts, duplicate handling, and median calculations
-- Prepared the clean filtered dataset for the Week 8–10 Tableau dashboard development
 
-```
+
 ### Weeks 8–10 - Tableau Dashboard Development
 
 Completed the Tableau dashboard-development phase using the cleaned, Residential-filtered Listing and Sold datasets.
