@@ -191,5 +191,36 @@ Outlier-detection tasks included:
 - Generated a written before-and-after comparison of the filtering results
 - Independently validated all thresholds, flags, row counts, duplicate handling, and median calculations
 - Prepared the clean filtered dataset for the Week 8–10 Tableau dashboard development
+```
+### Weeks 8–10 - Tableau Dashboard Development
 
+Completed the Tableau dashboard-development phase using the cleaned, Residential-filtered Listing and Sold datasets.
+
+#### Live Tableau Dashboards
+
+- [California Residential Market Analysis](https://public.tableau.com/app/profile/shuyao.li4777/viz/CaliforniaResidentialMarketAnalysis/CountyMarketConditions)
+- [California Residential Real Estate Competitive Analysis](https://public.tableau.com/app/profile/shuyao.li4777/viz/competitive_analysis_17891563158100/Top100ListingOffices)
+
+#### Work Completed
+
+- Built interactive market-analysis dashboards covering:
+  - Monthly median close price
+  - Average days on market
+  - Close-to-original-list-price ratio
+  - Monthly new listings
+  - Monthly closed sales
+  - County-level market conditions
+- Built a competitive-analysis dashboard covering:
+  - Top 100 listing agents by sales volume and closed units
+  - Top 100 listing offices by sales volume and closed units
+  - ZIP-code map of median close prices
+  - ZIP-code map of homes sold
+- Added interactive filters for month, city, county, ZIP code, and property subtype.
+- Added dashboard actions to support interactive exploration.
+- Simplified monetary values using readable K, M, and B units.
+- Published the completed dashboards to Tableau Public.
+
+#### Data Privacy
+
+Raw and processed MLS datasets and packaged Tableau workbook files are not uploaded to GitHub. Tableau deliverables are shared through the Tableau Public links above.
 
