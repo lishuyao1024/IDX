@@ -191,6 +191,7 @@ Outlier-detection tasks included:
 - Generated a written before-and-after comparison of the filtering results
 - Independently validated all thresholds, flags, row counts, duplicate handling, and median calculations
 - Prepared the clean filtered dataset for the Week 8–10 Tableau dashboard development
+
 ```
 ### Weeks 8–10 - Tableau Dashboard Development
 
@@ -223,4 +224,4 @@ Completed the Tableau dashboard-development phase using the cleaned, Residential
 #### Data Privacy
 
 Raw and processed MLS datasets and packaged Tableau workbook files are not uploaded to GitHub. Tableau deliverables are shared through the Tableau Public links above.
-
+```
